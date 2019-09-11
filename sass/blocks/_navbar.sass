@@ -17,16 +17,11 @@
         margin-bottom: 5px
         font-size: 19px
         +bold
-
-    &__mobile, &__landline
-        text-align: right
-
-    &__phone
-        display: block
-        font-size: 19px
-        +bold
         text-decoration: none
         color: $text-color
+
+    &__mobile, &__landline
+        text-align: right        
 
     &__small-text
             display: block
@@ -43,7 +38,7 @@
     padding: 16px 0
     background-color: $primary
     transition: .2s
-    transform: translateY(-100%)
+    transform: translateY(-200%)
 
     &_active
         transform: translateY(0)
@@ -87,9 +82,28 @@
         font-size: 18px
         +bold
         text-transform: uppercase
+
     &__description
         display: block
         font-size: 14px
         color: $text-color-light
+
+@media (max-width: 991px)
+    .navbar
+        &__mobile, &__landline
+            display: none
+
+@media (max-width: 576px)
+    .logo
+        display: none
+
+    .menu
+        
+        &__nav
+            flex-direction: column
+
+        &__link
+            margin-bottom: 20px
+            
 
             
