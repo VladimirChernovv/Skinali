@@ -2,6 +2,17 @@ body
     +light
     color: $text-color
 
+.section
+    padding: 100px 0
+
+    &-title
+        font-size: 30px
+        +bold 
+        text-align: center
+         text-transform: uppercase
+    &__title
+        margin-bottom: 100px         
+
 .button-o
     border: 2px solid $primary
     padding: 17px 22px
@@ -41,6 +52,7 @@ body
 
         &:hover
             cursor: pointer
+
         &:before
             content: ''
             width: 30px
@@ -52,4 +64,9 @@ body
     .button-o
         font-size: 10px
         padding: 17px 14px
-    
+
+    .section
+        padding: 60px 0
+        
+        &-title
+            font-size: 24px
